@@ -17,7 +17,7 @@ Here, we are creating a simple html website. However, it's images are loading fr
 - Need an IAM user
 - bucket policy
 
-### IAM Configure
+### IAM User Configuration via aws cli
 
 Here Iam configuring an IAM user with S3 full access
 ```sh
@@ -52,10 +52,9 @@ The following bucket policy is added under the bucket permmision section.
 
 
 img
-## Uploading of images to the s3 bucket using sync command
+## Uploading of images to the s3 bucket using sync command:
 The following command sync local image folder with s3 bucket. You can directly drag images to the bucket using upload command in aws console.
 
-Dillinger uses a number of open source projects to work properly:
 
 ```sh
 aws s3 sync img s3://image.website/
