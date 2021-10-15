@@ -51,13 +51,12 @@ The following bucket policy is added under the bucket permmision section.
 ```
 
 
-img
 ## Uploading of images to the s3 bucket using sync command:
 The following command sync local image folder with s3 bucket. You can directly drag images to the bucket using upload command in aws console.
 
 
 ```sh
-aws s3 sync img s3://image.website/
+aws s3 sync img s3://ddr3.website/
 upload: img/constructive_bg_01.jpg to s3://image.website/constructive_bg_01.jpg
 upload: img/gallery-img-05.jpg to s3://image.website/gallery-img-05.jpg
 upload: img/gallery-img-02-tn.jpg to s3://image.website/gallery-img-02-tn.jpg
@@ -70,8 +69,9 @@ upload: img/gallery-img-06-tn.jpg to s3://image.website/gallery-img-06-tn.jpg
 
 ### Now we are creating a bucket policy to make the objects in s3 bucket as public
 Before that we have to edit the status of Block public access (bucket settings) to off from on status.
+![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr1.png?raw=true)
 
-img
+![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr2.png?raw=true)
 
 ```sh
 {
@@ -85,7 +85,7 @@ img
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::image.website/*"
+                "arn:aws:s3:::ddr3.website/*"
             ]
         }
     ]
@@ -108,9 +108,6 @@ systemctl restart httpd.service
 Now our images are loading from s3 bucket, we can identify the same by browsing website's image on a browser tab and see the image url will be pointed to your S3 bucket like "https://s3.ap-south-1.amazonaws.com/image.website/gallery-img-02-tn.jpg"
 
 Please check the following screen shots :
-img
-
-
-img
+![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr3.png?raw=true)
 
 
