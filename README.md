@@ -71,7 +71,7 @@ upload: img/gallery-img-06-tn.jpg to s3://image.website/gallery-img-06-tn.jpg
 Before that we have to edit the status of Block public access (bucket settings) to off from on status.
 ![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr1.png?raw=true)
 
-![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr2.png?raw=true)
+
 
 ```sh
 {
@@ -91,7 +91,7 @@ Before that we have to edit the status of Block public access (bucket settings) 
     ]
 }
 ```
-img
+![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr2.png?raw=true)
 
 The above code will provide all the object in that bucket to public access.
 Finally we have to modify the apache config file to serve the img directory from this bucket.
