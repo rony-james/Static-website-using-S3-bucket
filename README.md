@@ -94,14 +94,8 @@ Before that we have to edit the status of Block public access (bucket settings) 
 ![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr2.png?raw=true)
 
 The above code will provide all the object in that bucket to public access.
-Finally we have to modify the apache config file to serve the img directory from this bucket.
 
-```sh
-RewriteEngine On
-RewriteRule ^/img/(.*)$ https://s3.ap-south-1.amazonaws.com/image.website$1 [L]
-```
-
-Restart apache to reflect the changes.
+### Restart apache to reflect the changes.
 ```sh
 systemctl restart httpd.service
 ```
