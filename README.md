@@ -55,15 +55,47 @@ The following command sync local image folder with s3 bucket. You can directly d
 
 
 ```sh
-aws s3 sync img s3://ddr3.website/
-upload: img/constructive_bg_01.jpg to s3://image.website/constructive_bg_01.jpg
-upload: img/gallery-img-05.jpg to s3://image.website/gallery-img-05.jpg
-upload: img/gallery-img-02-tn.jpg to s3://image.website/gallery-img-02-tn.jpg
-upload: img/gallery-img-04-tn.jpg to s3://image.website/gallery-img-04-tn.jpg
-upload: img/gallery-img-03-tn.jpg to s3://image.website/gallery-img-03-tn.jpg
-upload: img/constructive_bg_02.jpg to s3://image.website/constructive_bg_02.jpg
-upload: img/constructive_bg_03.jpg to s3://image.website/constructive_bg_03.jpg
-upload: img/gallery-img-06-tn.jpg to s3://image.website/gallery-img-06-tn.jpg
+root@pc1:/home/rony/ddf/2123_simply_amazed (1)/2123_simply_amazed# aws s3 sync . s3://ddr3.bucket
+upload: css/slick.css to s3://ddr3.bucket/css/slick.css        
+upload: fontawesome/webfonts/fa-regular-400.eot to s3://ddr3.bucket/fontawesome/webfonts/fa-regular-400.eot
+upload: fontawesome/LICENSE.txt to s3://ddr3.bucket/fontawesome/LICENSE.txt
+upload: css/tooplate-simply-amazed.css to s3://ddr3.bucket/css/tooplate-simply-amazed.css
+upload: fontawesome/css/all.min.css to s3://ddr3.bucket/fontawesome/css/all.min.css
+upload: fontawesome/webfonts/fa-brands-400.woff2 to s3://ddr3.bucket/fontawesome/webfonts/fa-brands-400.woff2
+upload: fontawesome/webfonts/fa-brands-400.woff to s3://ddr3.bucket/fontawesome/webfonts/fa-brands-400.woff
+upload: fontawesome/webfonts/fa-brands-400.eot to s3://ddr3.bucket/fontawesome/webfonts/fa-brands-400.eot
+upload: fontawesome/webfonts/fa-regular-400.ttf to s3://ddr3.bucket/fontawesome/webfonts/fa-regular-400.ttf
+upload: fontawesome/webfonts/fa-brands-400.ttf to s3://ddr3.bucket/fontawesome/webfonts/fa-brands-400.ttf
+upload: fontawesome/webfonts/fa-regular-400.woff to s3://ddr3.bucket/fontawesome/webfonts/fa-regular-400.woff
+upload: css/bootstrap.min.css to s3://ddr3.bucket/css/bootstrap.min.css
+upload: fontawesome/webfonts/fa-regular-400.svg to s3://ddr3.bucket/fontawesome/webfonts/fa-regular-400.svg
+upload: fontawesome/webfonts/fa-regular-400.woff2 to s3://ddr3.bucket/fontawesome/webfonts/fa-regular-400.woff2
+upload: fontawesome/webfonts/fa-brands-400.svg to s3://ddr3.bucket/fontawesome/webfonts/fa-brands-400.svg
+upload: fontawesome/webfonts/fa-solid-900.woff2 to s3://ddr3.bucket/fontawesome/webfonts/fa-solid-900.woff2
+upload: img/gallery-img-01.jpg to s3://ddr3.bucket/img/gallery-img-01.jpg
+upload: img/gallery-img-02.jpg to s3://ddr3.bucket/img/gallery-img-02.jpg
+upload: fontawesome/webfonts/fa-solid-900.eot to s3://ddr3.bucket/fontawesome/webfonts/fa-solid-900.eot
+upload: img/gallery-img-03.jpg to s3://ddr3.bucket/img/gallery-img-03.jpg
+upload: fontawesome/webfonts/fa-solid-900.ttf to s3://ddr3.bucket/fontawesome/webfonts/fa-solid-900.ttf
+upload: fontawesome/webfonts/fa-solid-900.woff to s3://ddr3.bucket/fontawesome/webfonts/fa-solid-900.woff
+upload: img/gallery-img-04.jpg to s3://ddr3.bucket/img/gallery-img-04.jpg
+upload: img/gallery-img-05.jpg to s3://ddr3.bucket/img/gallery-img-05.jpg
+upload: img/gallery-img-06.jpg to s3://ddr3.bucket/img/gallery-img-06.jpg
+upload: img/gallery-img-08.jpg to s3://ddr3.bucket/img/gallery-img-08.jpg
+upload: img/gallery-img-09.jpg to s3://ddr3.bucket/img/gallery-img-09.jpg
+upload: img/gallery-img-07.jpg to s3://ddr3.bucket/img/gallery-img-07.jpg
+upload: img/menu-item-bg.png to s3://ddr3.bucket/img/menu-item-bg.png
+upload: ./index.html to s3://ddr3.bucket/index.html              
+upload: img/section-1-bg.jpg to s3://ddr3.bucket/img/section-1-bg.jpg
+upload: js/bootstrap.bundle.min.js to s3://ddr3.bucket/js/bootstrap.bundle.min.js
+upload: img/section-3-bg.jpg to s3://ddr3.bucket/img/section-3-bg.jpg
+upload: js/jquery-3.3.1.min.js to s3://ddr3.bucket/js/jquery-3.3.1.min.js
+upload: js/parallax.min.js to s3://ddr3.bucket/js/parallax.min.js
+upload: js/jquery.singlePageNav.min.js to s3://ddr3.bucket/js/jquery.singlePageNav.min.js
+upload: js/templatemo-script.js to s3://ddr3.bucket/js/templatemo-script.js
+upload: js/slick.js to s3://ddr3.bucket/js/slick.js             
+upload: fontawesome/webfonts/fa-solid-900.svg to s3://ddr3.bucket/fontawesome/webfonts/fa-solid-900.svg
+
 ```
 
 ### Now we are creating a bucket policy to make the objects in s3 bucket as public
