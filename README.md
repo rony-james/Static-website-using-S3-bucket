@@ -50,7 +50,7 @@ The following bucket policy is added under the bucket permmision section.
 ```
 
 
-## Uploading of files to the s3 bucket using sync command:
+## Uploading files to the s3 bucket using sync command:
 The following command sync local image folder with s3 bucket. You can directly drag images to the bucket using upload command in aws console.
 
 
