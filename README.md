@@ -94,7 +94,7 @@ Before that we have to edit the status of Block public access (bucket settings) 
 ![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr2.png?raw=true)
 
 The above code will provide all the object in that bucket to public access.
-Now go to the "static website hosting" option
+Now go to the "static website hosting" option under the properties section of the bucket.
 
 ![alt text](https://github.com/rony-james/Static-website-using-S3-bucket/blob/main/ddr4.png?raw=true)
 
