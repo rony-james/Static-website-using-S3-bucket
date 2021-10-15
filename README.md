@@ -55,7 +55,8 @@ The following command sync local image folder with s3 bucket. You can directly d
 
 
 ```sh
-#### root@pc1:/home/rony/ddf/2123_simply_amazed (1)/2123_simply_amazed# aws s3 sync . s3://ddr3.website
+root@pc1:# aws s3 sync . s3://ddr3.website
+
 upload: css/bootstrap.min.css to s3://ddr3.website/css/bootstrap.min.css
 upload: fontawesome/LICENSE.txt to s3://ddr3.website/fontawesome/LICENSE.txt
 upload: css/slick.css to s3://ddr3.website/css/slick.css          
